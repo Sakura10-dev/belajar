@@ -10,6 +10,12 @@
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbxcQ7GxnADO646bYwAT0FobvINN6xc0n5Qu_n9FasX81lDe033_4Z1eTlD13VYFKlD1/exec"></iframe>
+    <iframe id="appFrame"></iframe>
+
+    <script>
+        const baseUrl = "https://script.google.com/macros/s/AKfycbxcQ7GxnADO646bYwAT0FobvINN6xc0n5Qu_n9FasX81lDe033_4Z1eTlD13VYFKlD1/exec";
+        const queryString = window.location.search;
+        document.getElementById("appFrame").src = baseUrl + queryString;
+    </script>
 </body>
 </html>
